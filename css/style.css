@@ -1,0 +1,10 @@
+body {
+  background-color: black;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  color: red;
+}

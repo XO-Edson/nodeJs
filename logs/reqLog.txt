@@ -1,0 +1,8 @@
+20240619	21:06:43	 01f0d193-278b-4975-a829-37541210602e 	 /	 GET
+20240619	21:06:43	 8d601e9f-08eb-4db5-b89f-f609ebb3dec0 	 /css/style.css	 GET
+20240619	21:06:43	 88731c8a-1124-4339-994a-4401757efb06 	 /img/ralph-mayhew-aIxIwhwKsLc-unsplash.jpg	 GET
+20240619	21:06:43	 c25add61-6567-4d50-b0eb-f1dc99bf454b 	 /favicon.ico	 GET
+20240719	21:07:45	 db10f691-f48f-45a2-a4c7-8f812200191a 	 /	 GET
+20240719	21:07:45	 fc22ca61-a13c-49ab-a4a2-20fa7b51300e 	 /css/style.css	 GET
+20240719	21:07:45	 314cac1e-6254-4167-b786-674d87f8dd8b 	 /img/ralph-mayhew-aIxIwhwKsLc-unsplash.jpg	 GET
+20240719	21:07:45	 13b38e92-8309-454f-ab47-02891bad1b3d 	 /favicon.ico	 GET
