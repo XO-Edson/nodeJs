@@ -1,1 +1,7 @@
 20243921	20:39:32	 693b56d5-b48e-41e5-a247-36572677ec70 	 Error:Not allowed by CORS
+20244722	18:47:08	 ee79d6d0-ce3c-41f5-b5ca-9bb7eb1bd99e 	 Error:Not allowed by CORS
+20245822	18:58:20	 4dda0239-811c-4626-a6aa-583634cc11a7 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
+20245822	18:58:38	 007a6056-fee8-4fdd-8815-30b63ab0b76f 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
+20245922	18:59:00	 67efbc4c-c19e-4f51-a324-912383113eca 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
+20245922	18:59:04	 033e3bfe-8248-4bfc-b572-fa823f6a2925 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
+20245922	18:59:08	 5c740642-18e9-44e3-ba88-8116e4a75f10 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\new-page.html'
