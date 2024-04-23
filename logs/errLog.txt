@@ -5,3 +5,5 @@
 20245922	18:59:00	 67efbc4c-c19e-4f51-a324-912383113eca 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
 20245922	18:59:04	 033e3bfe-8248-4bfc-b572-fa823f6a2925 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\index.html'
 20245922	18:59:08	 5c740642-18e9-44e3-ba88-8116e4a75f10 	 Error:ENOENT: no such file or directory, stat 'C:\Users\edson\OneDrive\Documents\chi\NodeJs\routes\views\new-page.html'
+20244523	12:45:40	 be84623b-392c-4988-9726-aa81254d65b7 	 TypeError:employee.filter is not a function
+20244623	12:46:18	 a337653a-77c8-474b-8746-720764b73716 	 TypeError:employee.filter is not a function
