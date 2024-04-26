@@ -1,0 +1,20 @@
+[
+  {
+    "user": "Edson1",
+    "roles": { "User": 2001, "Editor": 1984 },
+    "pass": "$2b$10$ItK3TiFak.vJwltec2LOCONhPwn43sY2.Y1zGTwlbRXYwOgFvRB1G",
+    "refreshToken": ""
+  },
+  {
+    "user": "Edson2",
+    "roles": { "User": 2001 },
+    "pass": "$2b$10$XeCltxSuj.ELyKYCEZEDwuIILcAfFI7K07yd7.0ELsWlfqs69X9UK",
+    "refreshToken": ""
+  },
+  {
+    "user": "Edson3",
+    "roles": { "User": 2001, "Editor": 1984, "Admin": 5150 },
+    "pass": "$2b$10$BCXI7M280bBo9Idowlb1mugFWeiKuZW6.et0ZRQj8M/QsN.2TC9Vy",
+    "refreshToken": ""
+  }
+]
