@@ -15,3 +15,5 @@
 20242926	18:29:40	 0011405c-aefc-49a5-a184-3a63729978a6 	 TypeError:allowedOrigins.includes is not a function
 20243026	18:30:36	 42bd62ea-63f2-4f41-b1a3-5d91713b0480 	 TypeError:allowedOrigins.origin.includes is not a function
 20243226	18:32:55	 67a91f14-dbe7-4064-a58b-2905ddd45411 	 TypeError:corsOptions.includes is not a function
+20242927	11:29:29	 5d4c22c9-5c52-4fa6-b1d8-8f416a03a622 	 TypeError:data.employees.find is not a function
+20243027	11:30:15	 b01d6dc4-0377-46b2-8f0f-94a4f14b7f97 	 TypeError:data.employees.find is not a function
