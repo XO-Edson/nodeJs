@@ -1,25 +1,19 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+const User = require("../model/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
-const fsPromises = require("fs").promises;
-const path = require("path");
 
 const auth = async (req, res) => {
   const { user, pass } = req.body;
   if (!user || !pass)
     return res.status(400).json({ message: "Invalid user and password" });
 
-  const foundUser = usersDB.users.find((DBuser) => DBuser.user === user);
+  const foundUser = await User.findOne({ username: user }).exec();
+
+  console.log("Found User:", foundUser);
 
   if (!foundUser) return res.status(401).json({ message: "Unknown user" });
 
-  const match = await bcrypt.compare(pass, foundUser.pass);
+  const match = await bcrypt.compare(pass, foundUser.password);
 
   if (match) {
     const roles = Object.values(foundUser.roles);
@@ -39,16 +33,11 @@ const auth = async (req, res) => {
       process.env.REFRESH_TOKEN_SECRET,
       { expiresIn: "1d" }
     );
-    const otherUsers = usersDB.users.filter(
-      (person) => person.user !== foundUser.user
-    );
-    const currentUser = { ...foundUser, refreshToken };
-    usersDB.setUsers([...otherUsers, currentUser]);
 
-    await fsPromises.writeFile(
-      path.join(__dirname, "..", "model", "users.json"),
-      JSON.stringify(usersDB.users)
-    );
+    foundUser.refreshToken = refreshToken;
+    const result = await foundUser.save();
+
+    console.log(result);
 
     res.cookie("jwt", refreshToken, {
       httpOnly: true,

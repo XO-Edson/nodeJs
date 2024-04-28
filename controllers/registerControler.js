@@ -1,40 +1,25 @@
-const usersDB = {
-  users: require("../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+const User = require("../model/User");
 const bcrypt = require("bcrypt");
-const fsPromises = require("fs").promises;
-const path = require("path");
 
 const registerUser = async (req, res) => {
   const { user, pass } = req.body;
   if (!user || !pass)
     return res.status(400).json({ message: "Invalid user and password" });
 
-  const duplicate = usersDB.users.find((DBuser) => DBuser.user === user);
+  const duplicate = await User.findOne({ username: user }).exec();
 
   if (duplicate)
     return res.status(409).json({ message: "User already exists" }); //conflict
 
   try {
     const hashedPassword = await bcrypt.hash(pass, 10);
-    const newUser = {
-      user: user,
-      roles: {
-        User: 2001,
-      },
-      pass: hashedPassword,
-    };
-    usersDB.setUsers([...usersDB.users, newUser]);
-    await fsPromises.writeFile(
-      path.join(__dirname, "..", "model", "users.json"),
-      JSON.stringify(usersDB.users),
-      "\n"
-    );
+    const newUser = await User.create({
+      username: user,
+      password: hashedPassword,
+    });
 
-    console.log(usersDB.users);
+    console.log(newUser);
+
     res.status(201).json({ success: `New user ${user} created` });
   } catch (error) {
     res.status(500).json({ message: error.message });
