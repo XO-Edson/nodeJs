@@ -17,3 +17,4 @@
 20243226	18:32:55	 67a91f14-dbe7-4064-a58b-2905ddd45411 	 TypeError:corsOptions.includes is not a function
 20242927	11:29:29	 5d4c22c9-5c52-4fa6-b1d8-8f416a03a622 	 TypeError:data.employees.find is not a function
 20243027	11:30:15	 b01d6dc4-0377-46b2-8f0f-94a4f14b7f97 	 TypeError:data.employees.find is not a function
+20243529	11:35:39	 fb46221a-5ab3-44b5-a1fd-e34939c7f12a 	 SyntaxError:Expected property name or '}' in JSON at position 1

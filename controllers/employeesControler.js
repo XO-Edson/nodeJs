@@ -27,6 +27,7 @@ const createNewEmployee = async (req, res) => {
 };
 
 const updateEmployee = async (req, res) => {
+  console.log(req.body);
   if (!req?.body?.id) {
     return res.status(400).json({ message: "ID parameter required" });
   }
@@ -44,7 +45,7 @@ const updateEmployee = async (req, res) => {
   const result = await employee.save();
 
   console.log("Updated emp:", result);
-  res.json(data.employees);
+  res.json(result);
 };
 
 const deleteEmployee = async (req, res) => {
@@ -63,7 +64,7 @@ const deleteEmployee = async (req, res) => {
 
   console.log("Deleted emp:", result);
 
-  res.json(result);
+  res.json(result, employee);
 };
 
 const getEmployee = async (req, res) => {
